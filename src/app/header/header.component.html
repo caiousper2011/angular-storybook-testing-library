@@ -1,0 +1,5 @@
+<h1>Contador em: {{ counter }}</h1>
+<button (click)="updateCounter()">incrementar</button>
+<br />
+<input role="form" type="text" [formControl]="zipCodeField" />
+<h2>Logradouro: {{ (address$ | async)?.logradouro }}</h2>
